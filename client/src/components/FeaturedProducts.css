@@ -1,0 +1,11 @@
+.featured-products {
+  max-width: 1200px;
+  margin: 72px auto 0;
+  padding: 0 24px;
+}
+
+.featured-products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}

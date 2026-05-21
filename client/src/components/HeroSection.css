@@ -1,0 +1,159 @@
+.hero-section {
+  max-width: 1200px;
+  margin: 48px auto 0;
+  padding: 56px;
+  min-height: 520px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 48px;
+
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 36px;
+  box-shadow: var(--shadow-soft);
+}
+
+.hero-content {
+  max-width: 540px;
+}
+
+.hero-badge {
+  display: inline-block;
+  margin: 0 0 20px;
+  padding: 8px 16px;
+
+  background-color: rgba(217, 139, 161, 0.16);
+  color: var(--color-primary);
+  border-radius: var(--radius-pill);
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.hero-content h1 {
+  margin: 0;
+
+  font-size: 56px;
+  line-height: 1.05;
+  color: var(--color-text);
+}
+
+.hero-description {
+  margin: 24px 0 0;
+  max-width: 480px;
+
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--color-muted);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.primary-button,
+.secondary-button {
+  min-height: 48px;
+  padding: 0 24px;
+
+  border-radius: var(--radius-pill);
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.primary-button {
+  border: none;
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+}
+
+.secondary-button {
+  border: 1px solid var(--color-border);
+  background-color: transparent;
+  color: var(--color-text);
+}
+
+.hero-visual {
+  position: relative;
+  min-height: 420px;
+  padding: 32px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--color-bg);
+  border-radius: 32px;
+  overflow: hidden;
+}
+
+.hero-toy-placeholder {
+  font-size: 150px;
+  line-height: 1;
+}
+
+.hero-slide-copy {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.hero-slide-copy h2 {
+  margin: 0;
+  max-width: 340px;
+
+  font-size: 28px;
+  line-height: 1.2;
+  color: var(--color-text);
+}
+
+.hero-slide-copy p {
+  margin: 10px 0 0;
+  color: var(--color-muted);
+}
+
+.discount-badge {
+  position: absolute;
+  top: 28px;
+  right: 28px;
+
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--color-accent);
+  color: var(--color-text);
+  text-align: center;
+  font-size: 14px;
+}
+
+.discount-badge strong {
+  font-size: 22px;
+}
+
+.slider-dots {
+  display: flex;
+  gap: 8px;
+  margin-top: 28px;
+}
+
+.slider-dots span {
+  width: 10px;
+  height: 10px;
+  border-radius: var(--radius-pill);
+  background-color: var(--color-border);
+}
+
+.slider-dots .active-dot {
+  background-color: var(--color-primary);
+}

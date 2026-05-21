@@ -1,0 +1,46 @@
+import { NavLink } from "react-router-dom";
+import "./Header.css";
+
+function Header() {
+  return (
+    <header className="site-header">
+      <div className="header-top">
+        <div className="brand">
+          <div className="brand-icon">🧸</div>
+          <span className="brand-name">Cuddly Corner</span>
+        </div>
+
+        <div className="header-info">
+          <span>🚚 Free delivery over 399 kr</span>
+          <span>💗 Carefully selected soft toys</span>
+        </div>
+      </div>
+
+      <nav className="navbar">
+        <div className="nav-links">
+          <NavLink to="/products">Products</NavLink>
+          <NavLink to="/favorites">Favorites</NavLink>
+          <NavLink to="/">Home</NavLink>
+        </div>
+
+        <div className="nav-actions">
+          <div className="search-box">
+            <span>🔍</span>
+            <input type="text" placeholder="Search" />
+          </div>
+
+          <NavLink to="/account" className="nav-icon-link">
+            👤 Account
+          </NavLink>
+
+          <NavLink to="/cart" className="nav-icon-link cart-link">
+            🛒 Cart
+            <span className="cart-count">0</span>
+          </NavLink>
+        </div>
+      </nav>
+    </header>
+  );
+}
+
+export default Header;
