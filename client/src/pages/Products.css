@@ -1,0 +1,97 @@
+.products-page {
+  max-width: 1200px;
+  margin: 48px auto 0;
+  padding: 0 24px;
+}
+
+.products-hero {
+  padding: 48px 56px;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 36px;
+  box-shadow: var(--shadow-soft);
+}
+
+.products-kicker {
+  margin: 0 0 12px;
+  color: var(--color-primary);
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.products-hero h1 {
+  margin: 0;
+  color: var(--color-text);
+  font-size: 48px;
+  line-height: 1.1;
+}
+
+.products-hero p {
+  max-width: 560px;
+  margin: 18px 0 0;
+  color: var(--color-muted);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.products-section {
+  margin-top: 56px;
+}
+
+.products-header {
+  margin-bottom: 28px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.products-header h2 {
+  margin: 0;
+  color: var(--color-text);
+  font-size: 36px;
+}
+
+.products-header p {
+  margin: 8px 0 0;
+  color: var(--color-muted);
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.filter-buttons button {
+  min-height: 42px;
+  padding: 0 18px;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+
+  background-color: var(--color-surface);
+  color: var(--color-text);
+
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.filter-buttons button:hover {
+  border-color: var(--color-primary);
+}
+
+.filter-buttons .active-filter {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+}
