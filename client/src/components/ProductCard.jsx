@@ -1,6 +1,9 @@
+import { useCart } from "../context/CartContext";
 import "./ProductCard.css";
 
 function ProductCard({ product }) {
+  const { addToCart } = useCart();
+
   return (
     <article className="product-card">
       <button className="favorite-button" aria-label="Add to favorites">
@@ -19,7 +22,13 @@ function ProductCard({ product }) {
 
       <div className="product-card-bottom">
         <p className="product-price">{product.price} kr</p>
-        <button className="add-to-cart-button">Add to cart</button>
+
+        <button
+          className="add-to-cart-button"
+          onClick={() => addToCart(product)}
+        >
+          Add to cart
+        </button>
       </div>
     </article>
   );
