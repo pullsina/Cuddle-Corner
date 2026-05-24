@@ -1,0 +1,106 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Leo Celebration Lion",
+      "category": "Lions",
+      "description": "A gentle lion with a big heart and birthday spirit.",
+      "price": 279,
+      "emoji": "🦁",
+      "isFeatured": true
+    },
+    {
+      "id": "2",
+      "name": "Luna Party Bunny",
+      "category": "Bunnies",
+      "description": "A cuddly bunny for wishes, giggles and cake.",
+      "price": 199,
+      "emoji": "🐰",
+      "isFeatured": true
+    },
+    {
+      "id": "3",
+      "name": "Milo Birthday Bear",
+      "category": "Bears",
+      "description": "A soft bear with a party hat and a heart full of hugs.",
+      "price": 249,
+      "emoji": "🧸",
+      "isFeatured": true
+    },
+    {
+      "id": "4",
+      "name": "Nori Birthday Whale",
+      "category": "Ocean Friends",
+      "description": "A tiny ocean friend bringing waves of birthday joy.",
+      "price": 229,
+      "emoji": "🐳",
+      "isFeatured": true
+    },
+    {
+      "id": "5",
+      "name": "Rosie Wish Unicorn",
+      "category": "Fantasy Plushies",
+      "description": "A soft pink unicorn with a fluffy mane, golden horn and a sweet smile.",
+      "price": 259,
+      "emoji": "🦄",
+      "isFeatured": false
+    },
+    {
+      "id": "6",
+      "name": "Gus Gentle Gorilla",
+      "category": "Wild Friends",
+      "description": "A soft and gentle gorilla with big cuddly arms and plenty of warm hugs.",
+      "price": 319,
+      "emoji": "🦍",
+      "isFeatured": false
+    }
+  ],
+  "orders": [
+    {
+      "customer": {
+        "name": "Anastasiya Litvinkova",
+        "email": "sovya22@gmail.com",
+        "phone": "0708395110",
+        "paymentMethod": "Swish"
+      },
+      "items": [
+        {
+          "id": "1",
+          "name": "Leo Celebration Lion",
+          "category": "Lions",
+          "description": "A gentle lion with a big heart and birthday spirit.",
+          "price": 279,
+          "emoji": "🦁",
+          "isFeatured": true,
+          "quantity": 1
+        },
+        {
+          "id": "2",
+          "name": "Luna Party Bunny",
+          "category": "Bunnies",
+          "description": "A cuddly bunny for wishes, giggles and cake.",
+          "price": 199,
+          "emoji": "🐰",
+          "isFeatured": true,
+          "quantity": 1
+        },
+        {
+          "id": "5",
+          "name": "Rosie Wish Unicorn",
+          "category": "Fantasy Plushies",
+          "description": "A soft pink unicorn with a fluffy mane, golden horn and a sweet smile.",
+          "price": 259,
+          "emoji": "🦄",
+          "isFeatured": false,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 737,
+      "deliveryCost": 0,
+      "total": 737,
+      "createdAt": "2026-05-24T11:49:55.443Z",
+      "id": "4ITcIUinF0c"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

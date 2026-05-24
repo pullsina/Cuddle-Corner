@@ -1,11 +1,53 @@
+import { useEffect, useState } from "react";
 import ProductCard from "./ProductCard";
-import { products } from "../data/products";
 import "./FeaturedProducts.css";
 
-
 function FeaturedProducts() {
-    const featuredProducts = products.filter((product) => product.isFeatured);
-    
+  const [featuredProducts, setFeaturedProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
+
+  useEffect(() => {
+    async function fetchFeaturedProducts() {
+      try {
+        setLoading(true);
+
+        const response = await fetch("http://localhost:3001/products");
+
+        if (!response.ok) {
+          throw new Error("Could not fetch featured products.");
+        }
+
+        const data = await response.json();
+        const featured = data.filter((product) => product.isFeatured);
+
+        setFeaturedProducts(featured);
+      } catch (error) {
+        setError(error.message);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    fetchFeaturedProducts();
+  }, []);
+
+  if (loading) {
+    return (
+      <section className="featured-products">
+        <p>Loading featured products...</p>
+      </section>
+    );
+  }
+
+  if (error) {
+    return (
+      <section className="featured-products">
+        <p>{error}</p>
+      </section>
+    );
+  }
+
   return (
     <section className="featured-products">
       <div className="section-heading">

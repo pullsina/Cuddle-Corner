@@ -1,6 +1,5 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ProductCard from "../components/ProductCard";
-import { products } from "../data/products";
 import "./Products.css";
 
 const categories = [
@@ -14,12 +13,59 @@ const categories = [
 ];
 
 function Products() {
+  /*products börjar som tom array
+när fetch är klar sparar vi APIdatan i products*/
+  const [products, setProducts] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
+
+
+  /*När komponenten laddas första gången:
+hämta produkter från json-server*/
+  useEffect(() => {
+    async function fetchProducts() {
+      try {
+        setLoading(true);
+
+        const response = await fetch("http://localhost:3001/products");
+
+        if (!response.ok) {
+          throw new Error("Could not fetch products.");
+        }
+
+        const data = await response.json();
+        setProducts(data);
+      } catch (error) {
+        setError(error.message);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    fetchProducts();
+  }, []);
 
   const filteredProducts =
     selectedCategory === "All"
       ? products
       : products.filter((product) => product.category === selectedCategory);
+
+  if (loading) {
+    return (
+      <div className="products-page">
+        <p>Loading products...</p>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="products-page">
+        <p>{error}</p>
+      </div>
+    );
+  }
 
   return (
     <div className="products-page">

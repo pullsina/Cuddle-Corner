@@ -52,31 +52,52 @@ function Checkout() {
     return newErrors;
   }
 
-  function handleSubmit(event) {
-    event.preventDefault();
+async function handleSubmit(event) {
+  event.preventDefault();
 
-    const validationErrors = validateForm();
-    setErrors(validationErrors);
+  const validationErrors = validateForm();
+  setErrors(validationErrors);
 
-    if (Object.keys(validationErrors).length > 0) {
-      return;
+  if (Object.keys(validationErrors).length > 0) {
+    return;
+  }
+
+  const order = {
+    customer: formData,
+    items: cartItems,
+    subtotal: cartTotal,
+    deliveryCost,
+    total: finalTotal,
+    createdAt: new Date().toISOString(),
+  };
+
+  try {
+    const response = await fetch("http://localhost:3001/orders", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(order),
+    });
+
+    if (!response.ok) {
+      throw new Error("Could not save order.");
     }
 
-   const order = {
-  customer: formData,
-  items: cartItems,
-  subtotal: cartTotal,
-  deliveryCost,
-  total: finalTotal,
-  createdAt: new Date().toISOString(),
-};
+    const savedOrder = await response.json();
 
-clearCart();
+    clearCart();
 
-navigate("/confirmation", {
-  state: { order },
-});
+    navigate("/confirmation", {
+      state: { order: savedOrder },
+    });
+  } catch (error) {
+    console.error(error);
+    setErrors({
+      submit: "Something went wrong. Please try again.",
+    });
   }
+}
 
   if (cartItems.length === 0) {
     return (
@@ -174,6 +195,8 @@ navigate("/confirmation", {
               <p className="form-error">{errors.paymentMethod}</p>
             )}
           </div>
+
+          {errors.submit && <p className="form-error">{errors.submit}</p>}
 
           <button className="place-order-button" type="submit">
             Place order
