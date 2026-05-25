@@ -1,17 +1,12 @@
+/* eslint-disable react-refresh/only-export-components */
 import { createContext, useContext, useState } from "react";
 
-/* skapar själva context*/
 const CartContext = createContext();
 
-/* skapar state för varukorgen - statvärden är tom array []*/
 function CartProvider({ children }) {
   const [cartItems, setCartItems] = useState([]);
-/*Den här funktionen lägger till produkter i varukorgen. Den kollar först om produkten redan finns i varukorgen.
- Om den gör det, ökar den kvantiteten med 1. 
- Om den inte gör det, lägger den till produkten som en ny post i varukorgen med en kvantitet på 1.*/
-    
-    function addToCart(product) {
-      console.log("Adding to cart:", product);
+
+  function addToCart(product) {
     const existingItem = cartItems.find((item) => item.id === product.id);
 
     if (existingItem) {
@@ -60,35 +55,29 @@ function CartProvider({ children }) {
     setCartItems(updatedCart);
   }
 
-  const cartCount = cartItems.reduce(
-    (total, item) => total + item.quantity,
-    0
-  );
+  function clearCart() {
+    setCartItems([]);
+  }
 
+  const cartCount = cartItems.reduce((total, item) => total + item.quantity, 0);
   const cartTotal = cartItems.reduce(
     (total, item) => total + item.price * item.quantity,
     0
   );
 
-    function clearCart() {
-  setCartItems([]);
-    }
-    
-const value = {
-  cartItems,
-  addToCart,
-  removeFromCart,
-  increaseQuantity,
-  decreaseQuantity,
-  clearCart,
-  cartCount,
-  cartTotal,
-};
+  const value = {
+    cartItems,
+    addToCart,
+    removeFromCart,
+    increaseQuantity,
+    decreaseQuantity,
+    clearCart,
+    cartCount,
+    cartTotal,
+  };
 
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
 }
-
-
 
 function useCart() {
   return useContext(CartContext);

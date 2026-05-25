@@ -4,6 +4,7 @@ import { useCart } from "../context/CartContext";
 
 function Header() {
   const { cartCount } = useCart();
+
   return (
     <header className="site-header">
       <div className="header-top">
@@ -20,21 +21,14 @@ function Header() {
 
       <nav className="navbar">
         <div className="nav-links">
-          <NavLink to="/products">Products</NavLink>
-          <NavLink to="/favorites">Favorites</NavLink>
           <NavLink to="/">Home</NavLink>
+          <NavLink to="/products">Products</NavLink>
+          <NavLink to="/about">About Us</NavLink>
+          <NavLink to="/favorites">Favorites</NavLink>
+          <NavLink to="/account">My Account</NavLink>
         </div>
 
         <div className="nav-actions">
-          <div className="search-box">
-            <span>🔍</span>
-            <input type="text" placeholder="Search" />
-          </div>
-
-          <NavLink to="/account" className="nav-icon-link">
-            👤 Account
-          </NavLink>
-
           <NavLink to="/cart" className="nav-icon-link cart-link">
             🛒 Cart
             <span className="cart-count">{cartCount}</span>

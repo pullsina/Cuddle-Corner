@@ -12,23 +12,6 @@
   flex-direction: column;
 }
 
-.favorite-button {
-  position: absolute;
-  top: 18px;
-  right: 18px;
-
-  width: 36px;
-  height: 36px;
-  border-radius: var(--radius-pill);
-  border: 1px solid var(--color-border);
-
-  background-color: var(--color-surface);
-  color: var(--color-primary);
-
-  font-size: 22px;
-  cursor: pointer;
-}
-
 .product-image {
   height: 180px;
   border-radius: 24px;
@@ -92,4 +75,29 @@
   font-size: 14px;
   font-weight: 700;
   cursor: pointer;
+}
+
+@media (max-width: 520px) {
+  .product-card {
+    min-height: auto;
+    padding: 18px;
+  }
+
+  .product-image {
+    height: 190px;
+    font-size: 82px;
+  }
+
+  .product-card h3 {
+    font-size: 18px;
+  }
+
+  .product-card-bottom {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .add-to-cart-button {
+    width: 100%;
+  }
 }

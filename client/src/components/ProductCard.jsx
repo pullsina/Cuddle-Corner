@@ -6,10 +6,6 @@ function ProductCard({ product }) {
 
   return (
     <article className="product-card">
-      <button className="favorite-button" aria-label="Add to favorites">
-        ♡
-      </button>
-
       <div className="product-image">
         <span>{product.emoji}</span>
       </div>
@@ -25,6 +21,7 @@ function ProductCard({ product }) {
 
         <button
           className="add-to-cart-button"
+          type="button"
           onClick={() => addToCart(product)}
         >
           Add to cart

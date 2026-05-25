@@ -175,3 +175,56 @@
   font-size: 20px;
   font-weight: 800;
 }
+
+@media (max-width: 900px) {
+  .checkout-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .checkout-header {
+    padding: 40px 32px;
+  }
+
+  .checkout-header h1,
+  .empty-checkout h1 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 620px) {
+  .checkout-page {
+    margin-top: 32px;
+    padding: 0 16px;
+  }
+
+  .checkout-header,
+  .empty-checkout {
+    padding: 32px 24px;
+    border-radius: 28px;
+  }
+
+  .checkout-header h1,
+  .empty-checkout h1 {
+    font-size: 34px;
+  }
+
+  .checkout-header p,
+  .empty-checkout p {
+    font-size: 16px;
+  }
+
+  .checkout-form,
+  .checkout-summary {
+    padding: 24px;
+  }
+
+  .payment-options {
+    flex-direction: column;
+  }
+
+  .checkout-item,
+  .summary-row,
+  .summary-total {
+    gap: 12px;
+  }
+}

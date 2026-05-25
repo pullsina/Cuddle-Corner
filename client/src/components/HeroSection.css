@@ -60,6 +60,10 @@
   min-height: 48px;
   padding: 0 24px;
 
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
   border-radius: var(--radius-pill);
   font-size: 16px;
   font-weight: 700;
@@ -156,4 +160,75 @@
 
 .slider-dots .active-dot {
   background-color: var(--color-primary);
+}
+
+@media (max-width: 900px) {
+  .hero-section {
+    margin-top: 32px;
+    padding: 40px 32px;
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .hero-content h1 {
+    font-size: 44px;
+  }
+
+  .hero-description {
+    font-size: 17px;
+  }
+
+  .hero-visual {
+    min-height: 360px;
+  }
+}
+
+@media (max-width: 520px) {
+  .hero-section {
+    margin: 28px 16px 0;
+    padding: 28px 20px;
+    border-radius: 28px;
+  }
+
+  .hero-content h1 {
+    font-size: 34px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .primary-button,
+  .secondary-button {
+    width: 100%;
+  }
+
+  .hero-visual {
+    min-height: 320px;
+    padding: 24px;
+  }
+
+  .hero-toy-placeholder {
+    font-size: 110px;
+  }
+
+  .hero-slide-copy h2 {
+    font-size: 22px;
+  }
+
+  .discount-badge {
+    width: 92px;
+    height: 92px;
+    top: 18px;
+    right: 18px;
+    font-size: 12px;
+  }
+
+  .discount-badge strong {
+    font-size: 18px;
+  }
 }

@@ -1,32 +1,19 @@
 import { useEffect, useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import ProductCard from "../components/ProductCard";
 import "./Products.css";
 
-const categories = [
-  "All",
-  "Bears",
-  "Bunnies",
-  "Lions",
-  "Ocean Friends",
-  "Fantasy Plushies",
-  "Wild Friends",
-];
-
 function Products() {
-  /*products börjar som tom array
-när fetch är klar sparar vi APIdatan i products*/
   const [products, setProducts] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState("All");
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  const [searchParams, setSearchParams] = useSearchParams();
 
-
-  /*När komponenten laddas första gången:
-hämta produkter från json-server*/
   useEffect(() => {
     async function fetchProducts() {
       try {
         setLoading(true);
+        setError("");
 
         const response = await fetch("http://localhost:3001/products");
 
@@ -36,8 +23,8 @@ hämta produkter från json-server*/
 
         const data = await response.json();
         setProducts(data);
-      } catch (error) {
-        setError(error.message);
+      } catch (fetchError) {
+        setError(fetchError.message);
       } finally {
         setLoading(false);
       }
@@ -46,10 +33,29 @@ hämta produkter från json-server*/
     fetchProducts();
   }, []);
 
+  const availableCategories = [
+    "All",
+    ...new Set(products.map((product) => product.category)),
+  ];
+
+  const selectedCategory = searchParams.get("category") ?? "All";
+  const activeCategory = availableCategories.includes(selectedCategory)
+    ? selectedCategory
+    : "All";
+
   const filteredProducts =
-    selectedCategory === "All"
+    activeCategory === "All"
       ? products
-      : products.filter((product) => product.category === selectedCategory);
+      : products.filter((product) => product.category === activeCategory);
+
+  function handleCategorySelect(category) {
+    if (category === "All") {
+      setSearchParams({});
+      return;
+    }
+
+    setSearchParams({ category });
+  }
 
   if (loading) {
     return (
@@ -86,22 +92,27 @@ hämta produkter från json-server*/
         </div>
 
         <div className="filter-buttons">
-          {categories.map((category) => (
+          {availableCategories.map((category) => (
             <button
               key={category}
-              className={selectedCategory === category ? "active-filter" : ""}
-              onClick={() => setSelectedCategory(category)}
+              className={activeCategory === category ? "active-filter" : ""}
+              onClick={() => handleCategorySelect(category)}
+              type="button"
             >
               {category}
             </button>
           ))}
         </div>
 
-        <div className="products-grid">
-          {filteredProducts.map((product) => (
-            <ProductCard product={product} key={product.id} />
-          ))}
-        </div>
+        {filteredProducts.length > 0 ? (
+          <div className="products-grid">
+            {filteredProducts.map((product) => (
+              <ProductCard product={product} key={product.id} />
+            ))}
+          </div>
+        ) : (
+          <p>No products match the selected category.</p>
+        )}
       </section>
     </div>
   );

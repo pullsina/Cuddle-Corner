@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 import "./HeroSection.css";
 
 function HeroSection() {
   return (
     <section className="hero-section">
       <div className="hero-content">
-        <p className="hero-badge">Limited offer · 20% off birthday plushies</p>
+        <p className="hero-badge">Limited offer - 20% off birthday plushies</p>
 
         <h1>Birthday cuddles made extra special</h1>
 
@@ -14,8 +15,12 @@ function HeroSection() {
         </p>
 
         <div className="hero-actions">
-          <button className="primary-button">Shop birthday plushies</button>
-          <button className="secondary-button">View all plushies</button>
+          <Link className="primary-button" to="/products">
+            Shop birthday plushies
+          </Link>
+          <Link className="secondary-button" to="/products">
+            View all plushies
+          </Link>
         </div>
       </div>
 

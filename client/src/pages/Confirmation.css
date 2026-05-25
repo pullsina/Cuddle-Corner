@@ -101,4 +101,36 @@
   align-items: center;
   justify-content: center;
 }
-cd
+@media (max-width: 620px) {
+  .confirmation-page {
+    margin-top: 32px;
+    padding: 0 16px;
+  }
+
+  .confirmation-card {
+    padding: 32px 24px;
+    border-radius: 28px;
+  }
+
+  .confirmation-card h1 {
+    font-size: 34px;
+  }
+
+  .confirmation-message {
+    font-size: 16px;
+  }
+
+  .confirmation-details {
+    padding: 22px;
+  }
+
+  .confirmation-item,
+  .confirmation-row,
+  .confirmation-total {
+    gap: 12px;
+  }
+
+  .confirmation-button {
+    width: 100%;
+  }
+}

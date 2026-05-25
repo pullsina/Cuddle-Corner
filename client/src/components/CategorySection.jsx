@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./CategorySection.css";
 
 const categories = [
@@ -23,8 +24,8 @@ const categories = [
   },
   {
     id: 5,
-    name: "Birthday Plushies",
-    emoji: "🎁",
+    name: "Fantasy Plushies",
+    emoji: "🦄",
   },
 ];
 
@@ -38,10 +39,14 @@ function CategorySection() {
 
       <div className="category-grid">
         {categories.map((category) => (
-          <article className="category-card" key={category.id}>
+          <Link
+            className="category-card"
+            key={category.id}
+            to={`/products?category=${encodeURIComponent(category.name)}`}
+          >
             <div className="category-icon">{category.emoji}</div>
             <h3>{category.name}</h3>
-          </article>
+          </Link>
         ))}
       </div>
     </section>

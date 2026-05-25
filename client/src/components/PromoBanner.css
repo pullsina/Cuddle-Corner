@@ -93,3 +93,69 @@
   bottom: 24px;
   left: 28px;
 }
+
+@media (max-width: 900px) {
+  .promo-banner {
+    margin-top: 56px;
+    padding: 40px 32px;
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .promo-content h2 {
+    font-size: 34px;
+  }
+
+  .promo-visual {
+    min-height: 180px;
+  }
+}
+
+@media (max-width: 520px) {
+  .promo-banner {
+    margin: 56px 16px 0;
+    padding: 32px 24px;
+    border-radius: 28px;
+  }
+
+  .promo-label {
+    font-size: 13px;
+  }
+
+  .promo-content h2 {
+    font-size: 30px;
+  }
+
+  .promo-content p {
+    font-size: 16px;
+  }
+
+  .promo-button {
+    width: 100%;
+  }
+
+  .promo-visual {
+    min-height: 150px;
+  }
+
+  .gift-box {
+    width: 132px;
+    height: 132px;
+    border-radius: 28px;
+    font-size: 72px;
+  }
+
+  .promo-star {
+    font-size: 28px;
+  }
+
+  .star-one {
+    top: 6px;
+    right: 14px;
+  }
+
+  .star-two {
+    bottom: 4px;
+    left: 10px;
+  }
+}

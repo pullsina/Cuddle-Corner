@@ -12,6 +12,12 @@ function Footer() {
           </div>
 
           <p>Soft plush friends for birthdays, gifts and everyday cuddles.</p>
+
+          <div className="footer-quick-links">
+            <Link to="/about">About Us</Link>
+            <Link to="/favorites">Favorites</Link>
+            <Link to="/account">My Account</Link>
+          </div>
         </div>
 
         <div className="footer-column">
@@ -39,7 +45,7 @@ function Footer() {
           <h3>Contact</h3>
           <p>hello@cuddlycorner.se</p>
           <p>+46 70 123 45 67</p>
-          <p>Malmö, Sweden</p>
+          <p>Malmo, Sweden</p>
         </div>
       </div>
 
