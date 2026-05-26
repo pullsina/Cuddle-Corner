@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import { useCart } from "../context/CartContext";
+import ProductMedia from "./ProductMedia";
 import "./ProductCard.css";
 
 function ProductCard({ product }) {
@@ -6,18 +8,28 @@ function ProductCard({ product }) {
 
   return (
     <article className="product-card">
-      <div className="product-image">
-        <span>{product.emoji}</span>
-      </div>
+      <Link className="product-card-main" to={`/products/${product.id}`}>
+        <ProductMedia
+          product={product}
+          className="product-image"
+          imageClassName="product-image-file"
+          fallbackClassName="product-image-fallback"
+        />
 
-      <p className="product-category">{product.category}</p>
+        <p className="product-category">{product.category}</p>
 
-      <h3>{product.name}</h3>
+        <h3>{product.name}</h3>
 
-      <p className="product-description">{product.description}</p>
+        <p className="product-description">{product.description}</p>
+      </Link>
 
       <div className="product-card-bottom">
-        <p className="product-price">{product.price} kr</p>
+        <div className="product-card-meta">
+          <p className="product-price">{product.price} kr</p>
+          <Link className="product-details-link" to={`/products/${product.id}`}>
+            View details
+          </Link>
+        </div>
 
         <button
           className="add-to-cart-button"
