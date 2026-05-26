@@ -5,8 +5,22 @@
       "name": "Leo Celebration Lion",
       "category": "Lions",
       "description": "A gentle lion with a big heart and birthday spirit.",
+      "longDescription": "Leo loves birthdays, warm hugs and joining every celebration. With his soft mane and calm smile, he is the kind of plush friend that feels ready for both gift tables and bedtime cuddles.",
       "price": 279,
       "emoji": "🦁",
+      "image": "",
+      "imageAlt": "Leo Celebration Lion plush toy",
+      "gallery": [],
+      "size": "32 cm",
+      "material": "Polyester plush",
+      "careInstructions": "Hand wash gently and air dry.",
+      "stockStatus": "In stock",
+      "ageRecommendation": "3+ years",
+      "features": [
+        "Soft mane with a warm golden tone",
+        "Perfect for birthday gifts and cuddle corners",
+        "A calm personality made for cozy evenings"
+      ],
       "isFeatured": true
     },
     {
@@ -14,8 +28,22 @@
       "name": "Luna Party Bunny",
       "category": "Bunnies",
       "description": "A cuddly bunny for wishes, giggles and cake.",
+      "longDescription": "Luna is a cheerful party bunny with floppy ears, a gentle smile and a look that fits perfectly on a birthday table. She is made for sweet moments, tiny adventures and soft bedtime company.",
       "price": 199,
       "emoji": "🐰",
+      "image": "",
+      "imageAlt": "Luna Party Bunny plush toy",
+      "gallery": [],
+      "size": "28 cm",
+      "material": "Velvety polyester plush",
+      "careInstructions": "Spot clean or hand wash when needed.",
+      "stockStatus": "In stock",
+      "ageRecommendation": "3+ years",
+      "features": [
+        "Floppy ears and a soft pastel look",
+        "Lightweight and easy to carry around",
+        "A playful gift for birthdays and sleepovers"
+      ],
       "isFeatured": true
     },
     {
@@ -23,8 +51,22 @@
       "name": "Milo Birthday Bear",
       "category": "Bears",
       "description": "A soft bear with a party hat and a heart full of hugs.",
+      "longDescription": "Milo is the classic birthday bear of the collection. He brings a soft teddy look, a friendly face and just enough celebration energy to feel special without ever being too loud.",
       "price": 249,
       "emoji": "🧸",
+      "image": "",
+      "imageAlt": "Milo Birthday Bear plush toy",
+      "gallery": [],
+      "size": "30 cm",
+      "material": "Polyester plush with soft filling",
+      "careInstructions": "Hand wash gently and reshape while drying.",
+      "stockStatus": "In stock",
+      "ageRecommendation": "3+ years",
+      "features": [
+        "Classic teddy bear shape with birthday charm",
+        "Super cuddly body and soft rounded paws",
+        "A lovely choice for gifting or display"
+      ],
       "isFeatured": true
     },
     {
@@ -32,8 +74,22 @@
       "name": "Nori Birthday Whale",
       "category": "Ocean Friends",
       "description": "A tiny ocean friend bringing waves of birthday joy.",
+      "longDescription": "Nori is a little whale with a calm ocean mood and a playful birthday spirit. The rounded shape and soothing colors make this plushie feel extra gentle and easy to love.",
       "price": 229,
       "emoji": "🐳",
+      "image": "",
+      "imageAlt": "Nori Birthday Whale plush toy",
+      "gallery": [],
+      "size": "26 cm",
+      "material": "Short-pile polyester plush",
+      "careInstructions": "Hand wash only and dry flat.",
+      "stockStatus": "Low stock",
+      "ageRecommendation": "3+ years",
+      "features": [
+        "Rounded whale shape that feels easy to hug",
+        "Great for ocean-themed gifts and calm decor",
+        "Soft pastel look with a playful personality"
+      ],
       "isFeatured": true
     },
     {
@@ -41,8 +97,22 @@
       "name": "Rosie Wish Unicorn",
       "category": "Fantasy Plushies",
       "description": "A soft pink unicorn with a fluffy mane, golden horn and a sweet smile.",
+      "longDescription": "Rosie adds a little fantasy to the collection with a fluffy mane, a golden horn and a warm pink palette. She is made for dreamy gift moments, cute shelf styling and everyday snuggles.",
       "price": 259,
       "emoji": "🦄",
+      "image": "",
+      "imageAlt": "Rosie Wish Unicorn plush toy",
+      "gallery": [],
+      "size": "31 cm",
+      "material": "Polyester plush with fluffy mane details",
+      "careInstructions": "Spot clean and brush mane gently after drying.",
+      "stockStatus": "In stock",
+      "ageRecommendation": "3+ years",
+      "features": [
+        "Golden horn and soft fantasy styling",
+        "Fluffy mane with a playful pastel palette",
+        "A sweet gift for magical birthdays"
+      ],
       "isFeatured": false
     },
     {
@@ -50,82 +120,25 @@
       "name": "Gus Gentle Gorilla",
       "category": "Wild Friends",
       "description": "A soft and gentle gorilla with big cuddly arms and plenty of warm hugs.",
+      "longDescription": "Gus is the big-hearted plushie of the wild friends group. He has a calm presence, extra cuddly arms and a gentle look that makes him feel comforting from the very first hug.",
       "price": 319,
       "emoji": "🦍",
+      "image": "",
+      "imageAlt": "Gus Gentle Gorilla plush toy",
+      "gallery": [],
+      "size": "36 cm",
+      "material": "Soft polyester plush with extra filling",
+      "careInstructions": "Hand wash carefully and air dry.",
+      "stockStatus": "In stock",
+      "ageRecommendation": "4+ years",
+      "features": [
+        "Larger size with extra cuddly arms",
+        "A warm neutral color palette",
+        "Made for big hugs and cozy reading corners"
+      ],
       "isFeatured": false
     }
   ],
   "orders": [
-    {
-      "customer": {
-        "name": "Anastasiya Litvinkova",
-        "email": "sovya22@gmail.com",
-        "phone": "0708395110",
-        "paymentMethod": "Swish"
-      },
-      "items": [
-        {
-          "id": "1",
-          "name": "Leo Celebration Lion",
-          "category": "Lions",
-          "description": "A gentle lion with a big heart and birthday spirit.",
-          "price": 279,
-          "emoji": "🦁",
-          "isFeatured": true,
-          "quantity": 1
-        },
-        {
-          "id": "2",
-          "name": "Luna Party Bunny",
-          "category": "Bunnies",
-          "description": "A cuddly bunny for wishes, giggles and cake.",
-          "price": 199,
-          "emoji": "🐰",
-          "isFeatured": true,
-          "quantity": 1
-        },
-        {
-          "id": "5",
-          "name": "Rosie Wish Unicorn",
-          "category": "Fantasy Plushies",
-          "description": "A soft pink unicorn with a fluffy mane, golden horn and a sweet smile.",
-          "price": 259,
-          "emoji": "🦄",
-          "isFeatured": false,
-          "quantity": 1
-        }
-      ],
-      "subtotal": 737,
-      "deliveryCost": 0,
-      "total": 737,
-      "createdAt": "2026-05-24T11:49:55.443Z",
-      "id": "4ITcIUinF0c"
-    },
-    {
-      "customer": {
-        "name": "Anastasiya Litvinkova",
-        "email": "sovya22@gmail.com",
-        "phone": "0708395110",
-        "paymentMethod": "Card"
-      },
-      "items": [
-        {
-          "id": "2",
-          "name": "Luna Party Bunny",
-          "category": "Bunnies",
-          "description": "A cuddly bunny for wishes, giggles and cake.",
-          "price": 199,
-          "emoji": "🐰",
-          "isFeatured": true,
-          "quantity": 1
-        }
-      ],
-      "subtotal": 199,
-      "deliveryCost": 49,
-      "total": 248,
-      "createdAt": "2026-05-24T12:26:59.270Z",
-      "id": "bisfYqKem28"
-    }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+  ]
 }
