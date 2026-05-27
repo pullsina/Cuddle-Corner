@@ -10,7 +10,7 @@ function Header() {
       <div className="header-top">
         <div className="brand">
           <div className="brand-icon">🧸</div>
-          <span className="brand-name">Cuddly Corner</span>
+          <span className="brand-name">Cuddle Corner</span>
         </div>
 
         <div className="header-info">

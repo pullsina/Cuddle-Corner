@@ -1,6 +1,6 @@
 # Figma link
 
-Paste your desktop Figma link here before submission.
+Paste Figma link here
 
 ## Suggested checklist
 
@@ -12,4 +12,4 @@ Paste your desktop Figma link here before submission.
 
 ## Short design note
 
-Write 3-5 sentences in your own words about the design choices you made, for example colors, layout, and how you thought about usability.
+3-5 sentences in own words about the design choices you made, for example colors, layout, and how you thought about usability.

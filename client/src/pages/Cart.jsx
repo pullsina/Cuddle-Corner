@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useCart } from "../context/CartContext";
+import ProductMedia from "../components/ProductMedia";
 import "./Cart.css";
 
 function Cart() {
@@ -37,9 +38,12 @@ function Cart() {
         <div className="cart-items">
           {cartItems.map((item) => (
             <article className="cart-item" key={item.id}>
-              <div className="cart-item-image">
-                <span>{item.emoji}</span>
-              </div>
+              <ProductMedia
+                product={item}
+                className="cart-item-image"
+                imageClassName="cart-item-image-file"
+                fallbackClassName="cart-item-image-fallback"
+              />
 
               <div className="cart-item-info">
                 <p className="cart-item-category">{item.category}</p>

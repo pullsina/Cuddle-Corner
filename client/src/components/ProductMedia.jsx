@@ -1,5 +1,14 @@
+/* ProductMediaär en liten hjälpar komponent för att visa produktens
+ bild eller fallback. Den finns för att inte ska skriva samma 
+bildlogik på flera ställen.*/
+
 import { useState } from "react";
 import "./ProductMedia.css";
+
+/*Den gör i princip detta:
+om product image finns och fungerar - visa <img>
+om ingen bild finns ännu, eller om bilden failar - visa product.emoji
+om showHint={true}: visa texten Photo coming soon under emojin.*/
 
 function ProductMedia({
   product,

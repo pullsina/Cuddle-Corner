@@ -8,9 +8,13 @@
       "longDescription": "Leo loves birthdays, warm hugs and joining every celebration. With his soft mane and calm smile, he is the kind of plush friend that feels ready for both gift tables and bedtime cuddles.",
       "price": 279,
       "emoji": "🦁",
-      "image": "",
-      "imageAlt": "Leo Celebration Lion plush toy",
-      "gallery": [],
+      "image": "/images/products/leo-celebration-lion-main.png",
+      "imageAlt": "Leo Celebration Lion plush toy with party hat",
+      "gallery": [
+        "/images/products/leo-celebration-lion-main.png",
+        "/images/products/leo-celebration-lion-angle.png",
+        "/images/products/leo-celebration-lion-gift.png"
+      ],
       "size": "32 cm",
       "material": "Polyester plush",
       "careInstructions": "Hand wash gently and air dry.",
@@ -21,30 +25,38 @@
         "Perfect for birthday gifts and cuddle corners",
         "A calm personality made for cozy evenings"
       ],
-      "isFeatured": true
+      "isFeatured": true,
+      "isBirthday": true,
+      "discountPercent": 20
     },
     {
       "id": "2",
       "name": "Luna Party Bunny",
       "category": "Bunnies",
       "description": "A cuddly bunny for wishes, giggles and cake.",
-      "longDescription": "Luna is a cheerful party bunny with floppy ears, a gentle smile and a look that fits perfectly on a birthday table. She is made for sweet moments, tiny adventures and soft bedtime company.",
+      "longDescription": "Luna is a cheerful party bunny with soft ears, a gentle smile and a look that fits perfectly on a birthday table. She is made for sweet moments, tiny adventures and soft bedtime company.",
       "price": 199,
       "emoji": "🐰",
-      "image": "",
-      "imageAlt": "Luna Party Bunny plush toy",
-      "gallery": [],
+      "image": "/images/products/luna-party-bunny-main.png",
+      "imageAlt": "Luna Party Bunny plush toy with party hat",
+      "gallery": [
+        "/images/products/luna-party-bunny-main.png",
+        "/images/products/luna-party-bunny-angle.png",
+        "/images/products/luna-party-bunny-gift.png"
+      ],
       "size": "28 cm",
       "material": "Velvety polyester plush",
       "careInstructions": "Spot clean or hand wash when needed.",
       "stockStatus": "In stock",
       "ageRecommendation": "3+ years",
       "features": [
-        "Floppy ears and a soft pastel look",
+        "Soft ears and a warm pastel look",
         "Lightweight and easy to carry around",
         "A playful gift for birthdays and sleepovers"
       ],
-      "isFeatured": true
+      "isFeatured": true,
+      "isBirthday": true,
+      "discountPercent": 20
     },
     {
       "id": "3",
@@ -54,9 +66,13 @@
       "longDescription": "Milo is the classic birthday bear of the collection. He brings a soft teddy look, a friendly face and just enough celebration energy to feel special without ever being too loud.",
       "price": 249,
       "emoji": "🧸",
-      "image": "",
-      "imageAlt": "Milo Birthday Bear plush toy",
-      "gallery": [],
+      "image": "/images/products/milo-birthday-bear-main.png",
+      "imageAlt": "Milo Birthday Bear plush toy with party hat",
+      "gallery": [
+        "/images/products/milo-birthday-bear-main.png",
+        "/images/products/milo-birthday-bear-angle.png",
+        "/images/products/milo-birthday-bear-gift.png"
+      ],
       "size": "30 cm",
       "material": "Polyester plush with soft filling",
       "careInstructions": "Hand wash gently and reshape while drying.",
@@ -67,19 +83,23 @@
         "Super cuddly body and soft rounded paws",
         "A lovely choice for gifting or display"
       ],
-      "isFeatured": true
+      "isFeatured": true,
+      "isBirthday": true,
+      "discountPercent": 20
     },
     {
       "id": "4",
-      "name": "Nori Birthday Whale",
+      "name": "Nori Party Whale",
       "category": "Ocean Friends",
       "description": "A tiny ocean friend bringing waves of birthday joy.",
       "longDescription": "Nori is a little whale with a calm ocean mood and a playful birthday spirit. The rounded shape and soothing colors make this plushie feel extra gentle and easy to love.",
       "price": 229,
       "emoji": "🐳",
-      "image": "",
-      "imageAlt": "Nori Birthday Whale plush toy",
-      "gallery": [],
+      "image": "/images/products/nori-party-whale-main.png",
+      "imageAlt": "Nori Party Whale plush toy with party hat",
+      "gallery": [
+        "/images/products/nori-party-whale-main.png"
+      ],
       "size": "26 cm",
       "material": "Short-pile polyester plush",
       "careInstructions": "Hand wash only and dry flat.",
@@ -90,19 +110,23 @@
         "Great for ocean-themed gifts and calm decor",
         "Soft pastel look with a playful personality"
       ],
-      "isFeatured": true
+      "isFeatured": true,
+      "isBirthday": true,
+      "discountPercent": 20
     },
     {
       "id": "5",
-      "name": "Rosie Wish Unicorn",
+      "name": "Rosie Party Unicorn",
       "category": "Fantasy Plushies",
       "description": "A soft pink unicorn with a fluffy mane, golden horn and a sweet smile.",
       "longDescription": "Rosie adds a little fantasy to the collection with a fluffy mane, a golden horn and a warm pink palette. She is made for dreamy gift moments, cute shelf styling and everyday snuggles.",
       "price": 259,
       "emoji": "🦄",
-      "image": "",
-      "imageAlt": "Rosie Wish Unicorn plush toy",
-      "gallery": [],
+      "image": "/images/products/rosie-party-unicorn-main.png",
+      "imageAlt": "Rosie Party Unicorn plush toy with party hat",
+      "gallery": [
+        "/images/products/rosie-party-unicorn-main.png"
+      ],
       "size": "31 cm",
       "material": "Polyester plush with fluffy mane details",
       "careInstructions": "Spot clean and brush mane gently after drying.",
@@ -113,19 +137,25 @@
         "Fluffy mane with a playful pastel palette",
         "A sweet gift for magical birthdays"
       ],
-      "isFeatured": false
+      "isFeatured": true,
+      "isBirthday": true,
+      "discountPercent": 20
     },
     {
       "id": "6",
-      "name": "Gus Gentle Gorilla",
+      "name": "Gus Party Gorilla",
       "category": "Wild Friends",
-      "description": "A soft and gentle gorilla with big cuddly arms and plenty of warm hugs.",
-      "longDescription": "Gus is the big-hearted plushie of the wild friends group. He has a calm presence, extra cuddly arms and a gentle look that makes him feel comforting from the very first hug.",
+      "description": "A soft and gentle gorilla with big cuddly arms and birthday charm.",
+      "longDescription": "Gus is the big-hearted plushie of the wild friends group. He has a calm presence, extra cuddly arms and a gentle party look that makes him feel comforting from the very first hug.",
       "price": 319,
       "emoji": "🦍",
-      "image": "",
-      "imageAlt": "Gus Gentle Gorilla plush toy",
-      "gallery": [],
+      "image": "/images/products/gus-party-gorilla-main.png",
+      "imageAlt": "Gus Party Gorilla plush toy with party hat",
+      "gallery": [
+        "/images/products/gus-party-gorilla-main.png",
+        "/images/products/gus-party-gorilla-angle.png",
+        "/images/products/gus-party-gorilla-gift.png"
+      ],
       "size": "36 cm",
       "material": "Soft polyester plush with extra filling",
       "careInstructions": "Hand wash carefully and air dry.",
@@ -136,9 +166,334 @@
         "A warm neutral color palette",
         "Made for big hugs and cozy reading corners"
       ],
-      "isFeatured": false
+      "isFeatured": true,
+      "isBirthday": true,
+      "discountPercent": 20
+    },
+    {
+      "id": "7",
+      "name": "Bruno Gift Bear",
+      "category": "Bears",
+      "description": "A grey teddy bear holding a carefully wrapped present.",
+      "longDescription": "Bruno is a thoughtful gift bear with soft grey fur, a gentle smile and a present ready to make someone feel special.",
+      "price": 239,
+      "emoji": "🧸",
+      "image": "/images/products/bruno-gift-bear-main.png",
+      "imageAlt": "Bruno Gift Bear grey plush toy holding a present",
+      "gallery": [
+        "/images/products/bruno-gift-bear-main.png"
+      ],
+      "size": "30 cm",
+      "material": "Polyester plush with satin ribbon detail",
+      "careInstructions": "Hand wash gently and air dry.",
+      "stockStatus": "In stock",
+      "ageRecommendation": "3+ years",
+      "features": [
+        "Soft grey teddy bear design",
+        "Gift box detail for a special look",
+        "Perfect for thoughtful presents"
+      ],
+      "isFeatured": false,
+      "isBirthday": false,
+      "discountPercent": 0
+    },
+    {
+      "id": "8",
+      "name": "Honey Sleepy Bear",
+      "category": "Bears",
+      "description": "A peaceful white bear made for calm bedtime cuddles.",
+      "longDescription": "Honey Sleepy Bear has a warm ivory color, a soft nightcap and a calm sleepy expression. He is made for quiet evenings and soft bedtime routines.",
+      "price": 229,
+      "emoji": "🧸",
+      "image": "/images/products/honey-sleepy-bear-main.png",
+      "imageAlt": "Honey Sleepy Bear white plush toy with nightcap",
+      "gallery": [
+        "/images/products/honey-sleepy-bear-main.png"
+      ],
+      "size": "29 cm",
+      "material": "Soft polyester plush",
+      "careInstructions": "Hand wash gently and reshape while drying.",
+      "stockStatus": "In stock",
+      "ageRecommendation": "3+ years",
+      "features": [
+        "Soft ivory plush fur",
+        "Sleepy embroidered expression",
+        "Perfect for bedtime cuddles"
+      ],
+      "isFeatured": false,
+      "isBirthday": false,
+      "discountPercent": 0
+    },
+    {
+      "id": "9",
+      "name": "Poppy Gift Bunny",
+      "category": "Bunnies",
+      "description": "A blush pink bunny holding a small present.",
+      "longDescription": "Poppy Gift Bunny is soft, sweet and ready for giving. Her pink plush look and tiny gift box make her feel thoughtful and cheerful.",
+      "price": 209,
+      "emoji": "🐰",
+      "image": "/images/products/poppy-gift-bunny-main.png",
+      "imageAlt": "Poppy Gift Bunny pink plush toy holding a present",
+      "gallery": [
+        "/images/products/poppy-gift-bunny-main.png"
+      ],
+      "size": "28 cm",
+      "material": "Velvety polyester plush",
+      "careInstructions": "Spot clean or hand wash when needed.",
+      "stockStatus": "In stock",
+      "ageRecommendation": "3+ years",
+      "features": [
+        "Blush pink plush design",
+        "Tiny wrapped gift detail",
+        "Soft and lightweight"
+      ],
+      "isFeatured": false,
+      "isBirthday": false,
+      "discountPercent": 0
+    },
+    {
+      "id": "10",
+      "name": "Cloud Sleepy Bunny",
+      "category": "Bunnies",
+      "description": "A grey sleepy bunny with a soft blue nightcap.",
+      "longDescription": "Cloud Sleepy Bunny is made for slow evenings, soft stories and cozy naps. Her calm expression and long ears give her a gentle bedtime feel.",
+      "price": 219,
+      "emoji": "🐰",
+      "image": "/images/products/cloud-sleepy-bunny-main.png",
+      "imageAlt": "Cloud Sleepy Bunny grey plush toy with nightcap",
+      "gallery": [
+        "/images/products/cloud-sleepy-bunny-main.png"
+      ],
+      "size": "29 cm",
+      "material": "Soft polyester plush",
+      "careInstructions": "Hand wash gently and air dry.",
+      "stockStatus": "In stock",
+      "ageRecommendation": "3+ years",
+      "features": [
+        "Calm sleepy expression",
+        "Long soft bunny ears",
+        "Perfect for bedtime routines"
+      ],
+      "isFeatured": false,
+      "isBirthday": false,
+      "discountPercent": 0
+    },
+    {
+      "id": "11",
+      "name": "Sunny Gift Lion",
+      "category": "Lions",
+      "description": "A warm lion plush holding a soft pastel present.",
+      "longDescription": "Sunny Gift Lion brings a cheerful golden look and a sweet wrapped present. He is a bright little friend for celebrations, shelves and cozy rooms.",
+      "price": 269,
+      "emoji": "🦁",
+      "image": "/images/products/sunny-gift-lion-main.png",
+      "imageAlt": "Sunny Gift Lion plush toy holding a present",
+      "gallery": [
+        "/images/products/sunny-gift-lion-main.png"
+      ],
+      "size": "31 cm",
+      "material": "Polyester plush with soft mane",
+      "careInstructions": "Hand wash gently and air dry.",
+      "stockStatus": "In stock",
+      "ageRecommendation": "3+ years",
+      "features": [
+        "Warm honey-gold plush tone",
+        "Soft mane and rounded paws",
+        "Gift box detail"
+      ],
+      "isFeatured": false,
+      "isBirthday": false,
+      "discountPercent": 0
+    },
+    {
+      "id": "12",
+      "name": "Nilo Sleepy Lion",
+      "category": "Lions",
+      "description": "A calm cream lion with a soft sleepy look.",
+      "longDescription": "Nilo Sleepy Lion is gentle, quiet and cozy. His pale plush fur, sleepy expression and soft nightcap make him a perfect bedtime companion.",
+      "price": 259,
+      "emoji": "🦁",
+      "image": "/images/products/nilo-sleepy-lion-main.png",
+      "imageAlt": "Nilo Sleepy Lion cream plush toy with nightcap",
+      "gallery": [
+        "/images/products/nilo-sleepy-lion-main.png"
+      ],
+      "size": "31 cm",
+      "material": "Soft polyester plush",
+      "careInstructions": "Hand wash gently and air dry.",
+      "stockStatus": "In stock",
+      "ageRecommendation": "3+ years",
+      "features": [
+        "Soft cream plush color",
+        "Sleepy embroidered eyes",
+        "Cozy bedtime design"
+      ],
+      "isFeatured": false,
+      "isBirthday": false,
+      "discountPercent": 0
+    },
+    {
+      "id": "13",
+      "name": "Finn Gift Fox",
+      "category": "Wild Friends",
+      "description": "A warm fox plush holding a soft pastel gift.",
+      "longDescription": "Finn Gift Fox is playful, bright and ready for gifting. His orange plush fur and soft cream details make him a charming wild friend.",
+      "price": 249,
+      "emoji": "🦊",
+      "image": "/images/products/finn-gift-fox-main.png",
+      "imageAlt": "Finn Gift Fox plush toy holding a present",
+      "gallery": [
+        "/images/products/finn-gift-fox-main.png"
+      ],
+      "size": "27 cm",
+      "material": "Polyester plush",
+      "careInstructions": "Spot clean and air dry.",
+      "stockStatus": "In stock",
+      "ageRecommendation": "3+ years",
+      "features": [
+        "Warm orange fox design",
+        "Soft cream details",
+        "Small gift box accessory"
+      ],
+      "isFeatured": false,
+      "isBirthday": false,
+      "discountPercent": 0
+    },
+    {
+      "id": "14",
+      "name": "Ella Sleepy Elephant",
+      "category": "Wild Friends",
+      "description": "A pale grey elephant with a peaceful sleepy expression.",
+      "longDescription": "Ella Sleepy Elephant is a gentle plush friend with soft floppy ears, a calm face and a dreamy blue nightcap. She is perfect for quiet moments.",
+      "price": 289,
+      "emoji": "🐘",
+      "image": "/images/products/ella-sleepy-elephant-main.png",
+      "imageAlt": "Ella Sleepy Elephant plush toy with nightcap",
+      "gallery": [
+        "/images/products/ella-sleepy-elephant-main.png"
+      ],
+      "size": "32 cm",
+      "material": "Soft polyester plush",
+      "careInstructions": "Hand wash gently and air dry.",
+      "stockStatus": "In stock",
+      "ageRecommendation": "3+ years",
+      "features": [
+        "Large soft floppy ears",
+        "Peaceful sleepy expression",
+        "Gentle bedtime look"
+      ],
+      "isFeatured": false,
+      "isBirthday": false,
+      "discountPercent": 0
+    },
+    {
+      "id": "15",
+      "name": "Ollie Gift Octopus",
+      "category": "Ocean Friends",
+      "description": "A pastel octopus holding a small present.",
+      "longDescription": "Ollie Gift Octopus is soft, round and full of tiny hugs. With plush tentacles and a pastel gift box, Ollie feels playful and sweet.",
+      "price": 239,
+      "emoji": "🐙",
+      "image": "/images/products/ollie-gift-octopus-main.png",
+      "imageAlt": "Ollie Gift Octopus plush toy holding a present",
+      "gallery": [
+        "/images/products/ollie-gift-octopus-main.png"
+      ],
+      "size": "24 cm",
+      "material": "Short-pile polyester plush",
+      "careInstructions": "Hand wash only and dry flat.",
+      "stockStatus": "In stock",
+      "ageRecommendation": "3+ years",
+      "features": [
+        "Soft rounded octopus shape",
+        "Small gift box detail",
+        "Pastel ocean-inspired color"
+      ],
+      "isFeatured": false,
+      "isBirthday": false,
+      "discountPercent": 0
+    },
+    {
+      "id": "16",
+      "name": "Tula Sleepy Turtle",
+      "category": "Ocean Friends",
+      "description": "A mint turtle plush with a calm sleepy face.",
+      "longDescription": "Tula Sleepy Turtle has a soft shell, sleepy embroidered eyes and a soothing mint color. She is made for gentle cuddles and calm rooms.",
+      "price": 219,
+      "emoji": "🐢",
+      "image": "/images/products/tula-sleepy-turtle-main.png",
+      "imageAlt": "Tula Sleepy Turtle plush toy with nightcap",
+      "gallery": [
+        "/images/products/tula-sleepy-turtle-main.png"
+      ],
+      "size": "25 cm",
+      "material": "Soft polyester plush",
+      "careInstructions": "Hand wash gently and dry flat.",
+      "stockStatus": "In stock",
+      "ageRecommendation": "3+ years",
+      "features": [
+        "Soft mint turtle shell",
+        "Sleepy embroidered eyes",
+        "Gentle ocean friend design"
+      ],
+      "isFeatured": false,
+      "isBirthday": false,
+      "discountPercent": 0
+    },
+    {
+      "id": "17",
+      "name": "Minty Gift Dragon",
+      "category": "Fantasy Plushies",
+      "description": "A mint baby dragon holding a small present.",
+      "longDescription": "Minty Gift Dragon is a tiny fantasy friend with soft wings, little horns and a sweet pastel gift. He brings a magical feeling without being too wild.",
+      "price": 279,
+      "emoji": "🐉",
+      "image": "/images/products/minty-gift-dragon-main.png",
+      "imageAlt": "Minty Gift Dragon plush toy holding a present",
+      "gallery": [
+        "/images/products/minty-gift-dragon-main.png"
+      ],
+      "size": "30 cm",
+      "material": "Polyester plush with soft wing details",
+      "careInstructions": "Spot clean and air dry.",
+      "stockStatus": "In stock",
+      "ageRecommendation": "4+ years",
+      "features": [
+        "Soft pastel dragon design",
+        "Tiny wings and little horns",
+        "Gift box detail"
+      ],
+      "isFeatured": false,
+      "isBirthday": false,
+      "discountPercent": 0
+    },
+    {
+      "id": "18",
+      "name": "Nova Sleepy Pegasus",
+      "category": "Fantasy Plushies",
+      "description": "A lavender pegasus plush with a dreamy sleepy look.",
+      "longDescription": "Nova Sleepy Pegasus is soft, magical and calm. With pastel lavender fur, tiny wings and a sleepy nightcap, Nova feels perfect for dreamy evenings.",
+      "price": 289,
+      "emoji": "🪽",
+      "image": "/images/products/nova-sleepy-pegasus-main.png",
+      "imageAlt": "Nova Sleepy Pegasus lavender plush toy with nightcap",
+      "gallery": [
+        "/images/products/nova-sleepy-pegasus-main.png"
+      ],
+      "size": "31 cm",
+      "material": "Polyester plush with fluffy mane and tail",
+      "careInstructions": "Spot clean and brush mane gently after drying.",
+      "stockStatus": "In stock",
+      "ageRecommendation": "4+ years",
+      "features": [
+        "Lavender fantasy plush design",
+        "Soft wings and sleepy expression",
+        "Dreamy bedtime styling"
+      ],
+      "isFeatured": false,
+      "isBirthday": false,
+      "discountPercent": 0
     }
   ],
-  "orders": [
-  ]
+  "orders": []
 }

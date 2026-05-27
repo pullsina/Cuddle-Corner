@@ -8,6 +8,7 @@ function ProductDetail() {
   const { id } = useParams();
   const { addToCart } = useCart();
   const [product, setProduct] = useState(null);
+  const [selectedImage, setSelectedImage] = useState("");
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
@@ -24,9 +25,14 @@ function ProductDetail() {
         }
 
         const data = await response.json();
+        const firstImage =
+          [data.image, ...(data.gallery ?? [])].find(Boolean) ?? "";
+
         setProduct(data);
+        setSelectedImage(firstImage);
       } catch (fetchError) {
         setError(fetchError.message);
+        setSelectedImage("");
       } finally {
         setLoading(false);
       }
@@ -58,6 +64,10 @@ function ProductDetail() {
   }
 
   const features = product.features ?? [];
+  const galleryImages = [...new Set([product.image, ...(product.gallery ?? [])])].filter(
+    Boolean
+  );
+  const activeImage = selectedImage || galleryImages[0] || "";
 
   return (
     <div className="product-detail-page">
@@ -66,13 +76,38 @@ function ProductDetail() {
       </Link>
 
       <section className="product-detail-hero">
-        <ProductMedia
-          product={product}
-          className="product-detail-visual"
-          imageClassName="product-detail-image"
-          fallbackClassName="product-detail-fallback"
-          showHint
-        />
+        <div className="product-detail-media">
+          <ProductMedia
+            product={{ ...product, image: activeImage }}
+            className="product-detail-visual"
+            imageClassName="product-detail-image"
+            fallbackClassName="product-detail-fallback"
+            showHint
+          />
+
+          {galleryImages.length > 1 && (
+            <div className="detail-gallery" aria-label="Product image gallery">
+              {galleryImages.map((imagePath, index) => (
+                <button
+                  key={imagePath}
+                  className={`detail-gallery-button ${
+                    activeImage === imagePath ? "active" : ""
+                  }`.trim()}
+                  type="button"
+                  onClick={() => setSelectedImage(imagePath)}
+                  aria-label={`Show product image ${index + 1}`}
+                  aria-pressed={activeImage === imagePath}
+                >
+                  <img
+                    src={imagePath}
+                    alt={`${product.name} view ${index + 1}`}
+                    className="detail-gallery-image"
+                  />
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
 
         <div className="product-detail-content">
           <p className="detail-category">{product.category}</p>
