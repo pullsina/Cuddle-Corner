@@ -42,19 +42,36 @@ function Products() {
   const activeCategory = availableCategories.includes(selectedCategory)
     ? selectedCategory
     : "All";
+  const searchQuery = searchParams.get("search")?.trim() ?? "";
+  const normalizedSearchQuery = searchQuery.toLowerCase();
 
-  const filteredProducts =
-    activeCategory === "All"
-      ? products
-      : products.filter((product) => product.category === activeCategory);
+  const filteredProducts = products.filter((product) => {
+    const matchesCategory =
+      activeCategory === "All" || product.category === activeCategory;
+    const matchesSearch =
+      normalizedSearchQuery === "" ||
+      [
+        product.name,
+        product.category,
+        product.shortDescription,
+        product.longDescription,
+      ]
+        .filter(Boolean)
+        .some((value) => value.toLowerCase().includes(normalizedSearchQuery));
+
+    return matchesCategory && matchesSearch;
+  });
 
   function handleCategorySelect(category) {
+    const nextSearchParams = new URLSearchParams(searchParams);
+
     if (category === "All") {
-      setSearchParams({});
-      return;
+      nextSearchParams.delete("category");
+    } else {
+      nextSearchParams.set("category", category);
     }
 
-    setSearchParams({ category });
+    setSearchParams(nextSearchParams);
   }
 
   if (loading) {
@@ -111,7 +128,7 @@ function Products() {
             ))}
           </div>
         ) : (
-          <p>No products match the selected category.</p>
+          <p>No products match your current filters.</p>
         )}
       </section>
     </div>
